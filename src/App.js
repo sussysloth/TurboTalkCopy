@@ -35,6 +35,7 @@ const App = () => {
   const handleGeneratedSentence = async () => {
     const generatedSentence = await generateSentence(selectedWords);
     setSentence(generatedSentence);
+    console.log("generate clicked");
   }
 
   const textToSpeech = () => {

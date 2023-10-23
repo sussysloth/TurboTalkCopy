@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiKey = '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';
+const apiKey = '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';
 const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-002/completions';
 
 const generateSentence = async (keywords) => {
@@ -14,7 +14,7 @@ const generateSentence = async (keywords) => {
       you, sport game, tomorrow = Are you going to the game tomorrow?
       what, wear = What am I going to wear today?
       `,
-      max_tokens: 10,  // Adjust this based on your desired sentence length
+      max_tokens: 20,  // Adjust this based on your desired sentence length
     }, {
       headers: {
         'Authorization': `Bearer ${apiKey}`,
