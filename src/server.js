@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiKey = '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';
+const apiKey = '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';
 const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-002/completions';
 
 const generateSentence = async (keywords) => {
