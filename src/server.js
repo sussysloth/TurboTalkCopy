@@ -1,19 +1,16 @@
 import axios from 'axios';
 
-const apiKey = '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';
+const apiKey = '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';
 const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-002/completions';
 
 const generateSentence = async (keywords) => {
   try {
     const response = await axios.post(apiUrl, {
       
-      prompt: `Turn the following keywords into a very short, concise sentence that a 5-year-old would say: ${keywords.join(', ')} Do not invent new words! Make a complete sentence. Here are some examples:\n
-      what, dinner = What are we having for dinner?
-      who, pick up, school = Who is picking me up from school today?
-      when, swim = When are we going to go swimming?
-      tired, no, homework = I'm tired, I can't do homework.
-      you, sport game, tomorrow = Are you going to the game tomorrow?
-      what, wear = What am I going to wear today?
+      prompt: `Turn the following keywords into a very short, concise sentence that a five year old would say: ${keywords.join(', ')} Here are some examples:\n
+      "hungry, want, snack" = I'm hungry, I want a snack.
+
+      "want, ice cream" = I want ice cream.
       `,
       
      //prompt: `say a sentence`,
